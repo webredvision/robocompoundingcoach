@@ -1,0 +1,356 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  :root {
+    --rv-primary: #073686;
+    --rv-bg-primary: #e0f5ff;
+    --rv-primary-light: #e0f5ff;
+    --rv-bg-primary-light: #073686;
+
+    --rv-secondary: #16aaec;
+    --rv-bg-secondary: #e0f5ff;
+    --rv-secondary-light: #e0f5ff;
+    --rv-bg-secondary-light: #16aaec;
+
+    --rv-white: #ffffff;
+    --rv-bg-white: #f8f8f8;
+    --rv-black: #000000;
+    --rv-bg-black: #262626;
+
+    --rv-body-font: "jost";
+    --rv-heading-font: "jost";
+    --rv-h1: 42px;
+    --rv-h2: 36px;
+    --rv-h3: 30px;
+    --rv-h4: 26px;
+    --rv-h5: 24px;
+    --rv-h6: 20px;
+    --rv-p: 16px;
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+/* COMMON GLOBAL CSS FOR ALl TEMPLATES */
+.body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: var(--rv-body-font);
+}
+
+.mainBg {
+  background-color: "transparent!important";
+  background: "url('/images/doodle-bg.svg')";
+  background-size: "contain";
+  background-position: "center";
+  height: "100vh",
+}
+
+.main-section {
+  padding: 80px 0;
+}
+
+.main-section-top {
+  padding: 0px 0 80px 0;
+}
+
+.main-section-bottom {
+  padding: 80px 0 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--rv-heading-font);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--rv-h1);
+}
+
+h2 {
+  font-size: var(--rv-h2);
+}
+
+h3 {
+  font-size: var(--rv-h3);
+}
+
+h4 {
+  font-size: var(--rv-h4);
+}
+
+h5 {
+  font-size: var(--rv-h5);
+}
+
+h6 {
+  font-size: var(--rv-h6);
+}
+
+a {
+  font-size: var(--rv-p);
+  text-decoration: none;
+}
+
+.p,
+p,
+span,
+em,
+li {
+  font-size: var(--rv-p);
+}
+
+.btn {
+  font-size: var(--rv-p);
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  background: var(--rv-primary);
+  border: 1px ridge var(--rv-primary);
+  border-radius: 10px;
+  color: var(--rv-white);
+  box-shadow: 0 0 2px 0ps gray;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background: var(--rv-bg-primary);
+  /* border:1px ridge var(--rv-primary); */
+  color: var(--rv-white);
+}
+
+.btn-secondary {
+  width: 100%;
+  background: var(--rv-white);
+  color: var(--rv-black);
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.664);
+  transition: opacity 0.3s ease;
+}
+
+.btn-secondary:hover {
+  color: var(--rv-white);
+  background: var(--rv-bg-secondary);
+}
+
+.btn-third {
+  text-align: center;
+  /* max-width: 10rem; */
+  background: var(--rv-primary);
+  color: var(--rv-white);
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
+  font-weight: 500;
+  /* box-shadow: 0 4px 14px -2px var(--rv-primary); */
+  transition: opacity 0.3s ease;
+}
+
+.btn-disabled {
+  text-align: center;
+  /* max-width: 10rem; */
+  background: gray;
+  color: var(--rv-black);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.664);
+  transition: opacity 0.3s ease;
+}
+
+.btn-third:hover {
+  color: var(--rv-white);
+  transition: all 0.2s ease-in;
+  background: var(--rv-secondary);
+}
+
+.primary {
+  color: var(--rv-primary);
+}
+
+.secondary {
+  color: var(--rv-secondary);
+}
+
+.bg-primary {
+  background-color: var(--rv-bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--rv-bg-secondary);
+}
+
+.bg-dark {
+  background-color: var(--rv-bg-primary-dark);
+}
+
+.bg-light {
+  background-color: var(--rv-bg-primary-light);
+}
+
+.bg-secondary-dark {
+  background-color: var(--rv-bg-secondary-dark);
+}
+
+.bg-secondary-light {
+  background-color: var(--rv-bg-secondary-light);
+}
+
+.heading {
+  position: relative;
+}
+
+.heading .title {
+  font-size: var(--rv-h1);
+}
+
+.heading .sub-title {
+  font-size: var(--rv-h6);
+  color: var(--rv-primary);
+}
+
+.btnWraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.customRange {
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right,
+      var(--rv-primary) 0%,
+      var(--rv-primary) var(--progress, 0%),
+      #e5e7eb var(--progress, 0%),
+      #e5e7eb 100%);
+  border-radius: 9999px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.customRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--rv-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  /* margin-top: -7px; center thumb */
+  border: 2px solid white;
+}
+
+
+
+.customRange::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--rv-primary);
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}

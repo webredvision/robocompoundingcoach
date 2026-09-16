@@ -1,0 +1,27 @@
+.headingLight {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--rv-primary);
+    text-transform: uppercase;
+}
+
+.headingDark {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--rv-white);
+    text-transform: uppercase;
+}
+
+.titleLight {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--rv-primary);
+    text-transform: uppercase;
+}
+
+.titleDark {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--rv-white);
+    text-transform: uppercase;
+}

@@ -1,0 +1,63 @@
+.navbar {
+  background: transparent;
+}
+
+.logoText {
+  color: var(--rv-primary);
+  font-weight: bold;
+}
+
+.logoIcon {
+  font-size: 28px;
+  color: var(--rv-primary);
+}
+
+.link {
+  color: var(--rv-primary);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.linkActive {
+  color: var(--rv-primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dropdownMenu {
+  background-color: #fff;
+  color: var(--rv-primary-dark);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+/* .dropdownItem:hover {
+    background-color: #f9f9f9;
+    color: var(--rv-primary-light);
+    border-radius: 15px;
+} */
+
+.mobileMenu {
+  /* background-color: #fff; */
+  color: var(--rv-primary);
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.btn-primary {
+  background: var(--rv-primary);
+  color: var(--rv-white);
+  padding: 0.7rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.664);
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover {
+  color: var(--rv-white);
+  background: var(--rv-secondary);
+}
