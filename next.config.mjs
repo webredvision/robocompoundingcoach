@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import path from "path";
 
 dotenv.config({
-  path: path.resolve("/rvdata/secrets/   /.env"),
+  path: path.resolve("/rvdata/secrets/robocompoundingcoach/.env"),
 });
 
 /** @type {import('next').NextConfig} */
